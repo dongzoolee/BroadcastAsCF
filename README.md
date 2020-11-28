@@ -4,7 +4,7 @@
 ### Check out at
 https://leed.at/leed/board/leedRead.php?boardid=107
 
-## 1. Put div in header
+## 1. Put div in header (bcast.html)
 ```html
 <!--broadcast in site-->
 <div id="bcast"></div>
@@ -22,7 +22,7 @@ socket.on('connect', function () {
 ```
 io.connect will set connection to the server and receive message from server and socket.on('msg') event will receive message from server.
 
-## 3. Let's set nodejs server (server_side.js)
+## 3. Let's start nodejs server (app.js)
 ```javascript
 var io = socketio();
 io.attach(server);
